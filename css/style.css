@@ -41,10 +41,6 @@ li {
 .main-section {
   position: relative;
   top: 150px;
-
-}
-
-.logo {
 }
 
 .logo img {
@@ -62,16 +58,25 @@ li {
 
 .search-bar input {
   display: block;
-  width: 475px;
+  width: 500px;
   height: 40px;
   margin: 0 auto;
 }
 
-.search-buttons .buttons {
-  font-size: 16px;
+.search-buttons {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-buttons .buttons{
+  font-size: 12px;
+  font-weight: bold;
   background-color: lightgray;
   border: none;
-  margin: 20px auto;
+  padding: 0 15px 0 15px;
+  margin: 20px 2px;
+  height: 35px;
 }
 
 .learn-more {
@@ -86,7 +91,6 @@ li {
   width: 100%;
   background-color: lightgray;
   height: 40px;
-
 }
 
 .footer-left {
