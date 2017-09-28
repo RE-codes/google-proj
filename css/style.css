@@ -19,8 +19,22 @@ li {
   display: inline;
 }
 
+a:link {
+  color: #757575;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #757575;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .header img {
-  height: 22px;
+  height: 20px;
+  opacity: .55;
 }
 
 .header {
@@ -36,6 +50,7 @@ li {
 
 .header-contents .pacman {
   height: 33px;
+  opacity: 1.0;
 }
 
 .main-section {
@@ -45,7 +60,7 @@ li {
 
 .logo img {
   display: block;
-  width: 270px;
+  width: 272px;
   margin: 0 auto;
 }
 
@@ -58,9 +73,40 @@ li {
 
 .search-bar input {
   display: block;
-  width: 500px;
-  height: 40px;
+  width: 575px;
+  height: 42px;
+  font-size: 16px;
   margin: 0 auto;
+  border-style: solid #f2f2f2 2px;
+}
+
+.search-bar input:hover {
+  box-shadow: 2px 3px 3px #e5e5e5;
+  border-left: 2px solid #f2f2f2;
+  border-top: 2px solid #f2f2f2;
+}
+
+.mic-container {
+  width: 570px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+.microphone {
+  width: 50px;
+  height: 50px;
+  left: 0px;
+  text-align: center;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.microphone img {
+  position: relative;
+  top: -52px;
+  height: 24px;
+  width: 24px;
+  margin: 16px;
 }
 
 .search-buttons {
@@ -69,27 +115,37 @@ li {
   text-align: center;
 }
 
-.search-buttons .buttons{
+.search-buttons .buttons {
   font-size: 12px;
   font-weight: bold;
-  background-color: lightgray;
-  border: none;
-  padding: 0 15px 0 15px;
-  margin: 20px 2px;
+  color: #757575;
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  padding: 0 20px 0 20px;
+  margin: 25px 2px;
   height: 35px;
+}
+
+.buttons:hover {
+  color: #000;
+  border: 2px solid #ddd;
 }
 
 .learn-more {
   padding-top: 0;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 25px;
+}
+
+.learn-more a {
+  color: #00e;
 }
 
 .footer-bar {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: lightgray;
+  background-color: #f2f2f2;
   height: 40px;
 }
 
