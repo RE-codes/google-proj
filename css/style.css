@@ -34,23 +34,29 @@ a:hover {
 
 .header img {
   height: 20px;
-  opacity: .55;
+  opacity: .5;
+}
+
+.header img:hover {
+  opacity: 1.0;
 }
 
 .header {
   position: absolute;
   right: 15px;
-  height: 40px
+  height: 40px;
+  margin-top: 10px;
 }
 
 .header-contents li {
-  margin-left: 20px;
+  margin: 0 10px;
   float: left;
 }
 
 .header-contents .pacman {
   height: 33px;
   opacity: 1.0;
+  transform: translateY(-6px);
 }
 
 .main-section {
@@ -77,13 +83,16 @@ a:hover {
   height: 42px;
   font-size: 16px;
   margin: 0 auto;
-  border-style: solid #f2f2f2 2px;
+  border: 2px solid #f2f2f2;
+  border-radius: 3px;
 }
 
 .search-bar input:hover {
   box-shadow: 2px 3px 3px #e5e5e5;
-  border-left: 2px solid #f2f2f2;
-  border-top: 2px solid #f2f2f2;
+}
+
+.search-bar input:focus {
+  outline: none;
 }
 
 .mic-container {
@@ -121,6 +130,7 @@ a:hover {
   color: #757575;
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
+  border-radius: 3px;
   padding: 0 20px 0 20px;
   margin: 25px 2px;
   height: 35px;
@@ -129,6 +139,10 @@ a:hover {
 .buttons:hover {
   color: #000;
   border: 2px solid #ddd;
+}
+
+.buttons:focus {
+  outline: 1px solid #00b6f1;
 }
 
 .learn-more {
@@ -162,10 +176,6 @@ a:hover {
   float: right;
 }
 
-.footer-left li {
-  padding: 15px;
-}
-
-.footer-right li {
+.footer-left li, .footer-right li {
   padding: 15px;
 }
